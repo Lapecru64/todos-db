@@ -4,7 +4,7 @@ import Todo from "./models/todos.model.js";
 
 Todo;
 
-const PORT = 8000;
+const PORT = process.env.PORT ?? 8000;
 
 db.authenticate()
   .then(() => {console.log('Conexión correcta')})
